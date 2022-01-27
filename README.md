@@ -12,7 +12,9 @@ This project is a new approach to detect humans in paintings using data augmenta
 4. Model Training and Testing 
 
 ## Dataset:
-To collect the data I webscraped the website Web Gallery of Art to get the images for the dataset. Images were filtered by French Paintings only. French paitnings were chosen because they represent more humans than other countries, which means we have enough data to train the model, I also have a BA in French language and literature which makes it easier to interpet the paintings.
+To collect the data I webscraped the website [Web Gallery of Art](https://www.wga.hu/) to get the images for the dataset. Images were filtered by French Paintings only. French paitnings were chosen because they represent more humans than other countries, which means we have enough data to train the model, I also have a BA in French language and literature which makes it easier to interpet the paintings.
+
+[Click here](https://osf.io/twb32/) to acess my dataset in my OSF account. 
 
 ### Annotations:
 
@@ -23,9 +25,9 @@ There were 1,500 plus images annotated (and resized to 640 by 640) but this is n
 To train the model I split the dataset into two different folders, training set (80%) and validation set (20%)
 
 ## Model: 
-To start the detection YOLOv5 (Redmon et al.) object detection model was used. The YOLO model processes images in real time at 45 fps. I used a smaller version of the network called YOLOv5s. YOLO learns very general representations of objects and it's ideal to be used as a human detection baseline.
+To start the detection [YOLOv5](https://arxiv.org/abs/1506.02640) (Redmon et al.) object detection model was used. The YOLO model processes images in real time at 45 fps. I used a smaller version of the network called YOLOv5s. YOLO learns very general representations of objects and it's ideal to be used as a human detection baseline.
 
-To preform the training and the testing I used a machine learning framework called PyTorch and I used a pretrained version of YOLOv5s which was trained on the COCO dataset.
+To preform the training and the testing I used a machine learning framework called PyTorch and I used a pretrained version of [YOLOv5s](https://github.com/ultralytics/yolov5) which was trained on the COCO dataset.
 I trained the model for 150 epochs using the early stopping technique (A technique where the model learns it's not detecting anything and it stops) 
 
 ## Experiments: 
