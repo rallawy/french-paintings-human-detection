@@ -37,4 +37,4 @@ As you can see here this image was a result of testing the model. It detect two 
 
 ## Conclusion and Future works: 
 
-The model needs some minor improvements. It has issues detecting smaller objects, perhaps this can be fixed by resizing the images to make them bigger (1080 by 1080 for example). Currently I was not able to taste this because of lack of computational power. 
+The model needs some minor improvements. It has issues detecting smaller objects, perhaps this can be fixed by resizing the images to make them bigger (1080 by 1080 for example). Currently I was not able to test this because of lack of computational power. 
